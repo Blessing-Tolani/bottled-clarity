@@ -40,7 +40,7 @@ export default function Footer() {
           message: `Error: ${result.message}`,
         })
       }
-    } catch (error: any) {
+    } catch (_) {
       enqueueSnackbar({
         variant: 'error',
         message: 'Error: Failed to send',
@@ -72,7 +72,7 @@ export default function Footer() {
                 email={email}
                 setEmail={(value) => {
                   setEmail(value)
-                  error ? setError('') : ''
+                  setError('')
                 }}
                 disabled={isSubmitting}
                 className="mdMax:placeholder:text-sm placeholder:text-white placeholder:text-opacity-50 placeholder:font-medium bg-white bg-opacity-20"
