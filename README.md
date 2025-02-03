@@ -16,16 +16,13 @@ You will first need to setup your local environment and ensure that all configur
 - Clone the repository to your local environment `git clone https://github.com/Blessing-Tolani/bottled-clarity.git` .
 - Navigate to the project folder `cd bottled-clarity`
 - In your terminal, run `yarn` to install project dependencies.
-- create `.env.local` file and add the environment variables listed below
+- create `.env.local` file and add the environment variables
+- The environment variables will be attached to the email sent that contains the live deployed link
 - To run App in development mode:
   - run `yarn dev`.
 
-## Environment Variables
+## Forms
 
-NEXT_PUBLIC_WAITLIST_GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwLfHP2pp12Dsy8kqhlWYGzutl5z5HLUYapFhMtoTiVTXenDtx9nVvWwczMhGYWgaol/exec'
-<br  />
-NEXT_PUBLIC_NEWSLETTER_GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzCUnQtbBB1EEDQ_SEbY35pLFsZQ0zprtEkUPq4ANvHVGk_zQS-cvGlnP3-eIw0vUsX/exec'
-
-<br>
+After joining the waitlist and subscribing to the newsletter, your email address will be sent to a spreadsheet. The spreadsheets are also attached to the email sent that contains the live deployed link. You can view the spreadsheet to check your email address
 
 ### **Note: Feel Free to ask further questions.**
