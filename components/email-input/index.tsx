@@ -18,6 +18,7 @@ export default function EmailInput({
       onChange={(e) => {
         setEmail(e.target.value)
       }}
+      autoComplete="off"
       disabled={disabled}
       value={email}
       className={clsx(
