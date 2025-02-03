@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Development
 
-## Getting Started
+Ensure that your local machine has all the required software, listed below, before setting up your local environment.
 
-First, run the development server:
+### Requirements
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Git](https://nodejs.org/en/download/) - Version control
+- [Node](https://nodejs.org/en/download/) - Javascript Runtime Environment( Lastest version)
+- [Yarn](https://classic.yarnpkg.com/lang/en/docs/install/)- Package Manager
+- [VScode](https://code.visualstudio.com/download)- Code Editor( Recommended)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Setup Local Environment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You will first need to setup your local environment and ensure that all configuration files are correctly configured.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Clone the repository to your local environment `git clone https://github.com/Blessing-Tolani/bottled-clarity.git` .
+- And navigate to the project folder `cd bottled-clarity`
+- In your terminal, run `yarn` to install project dependencies.
+- create `.env.local` file and add the environment variables listed below
+- To run App in development mode:
+  - run `yarn run dev`.
 
-## Learn More
+## Environment Variables
 
-To learn more about Next.js, take a look at the following resources:
+NEXT_PUBLIC_WAITLIST_GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwLfHP2pp12Dsy8kqhlWYGzutl5z5HLUYapFhMtoTiVTXenDtx9nVvWwczMhGYWgaol/exec'
+NEXT_PUBLIC_NEWSLETTER_GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzCUnQtbBB1EEDQ_SEbY35pLFsZQ0zprtEkUPq4ANvHVGk_zQS-cvGlnP3-eIw0vUsX/exec'
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<br>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### **Note: Feel Free to ask further questions.**
