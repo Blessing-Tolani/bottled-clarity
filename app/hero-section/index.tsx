@@ -63,8 +63,17 @@ export default function HeroSection() {
 
   return (
     <section className="h-[100vh] relative">
-      <Image src="/images/hero_section_body.png" fill quality={100} alt="" />
-      <div className=" absolute top-0  ">
+      <div
+        style={{
+          backgroundImage: "url('/images/hero_section_body.png')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          height: '100%',
+          width: '100%',
+        }}
+      ></div>
+      <div className="absolute top-0 right-0 left-0 bottom-0 mdMax:hidden xlMax:bg-[rgba(255,255,255,0.4)]"></div>
+      <div className=" absolute top-0 ">
         <div className=" h-20   border border-blue-100 border-opacity-20  flex justify-between w-screen px-5 lg:px-20 xl:px-40 items-center">
           <Image
             src="/images/logo.png"
