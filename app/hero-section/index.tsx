@@ -73,7 +73,10 @@ export default function HeroSection() {
           width: '100%',
         }}
       ></div>
-      <div className="absolute top-0 right-0 left-0 bottom-0 mdMax:hidden xlMax:bg-[rgba(255,255,255,0.4)]"></div>
+
+      {/* add an overlay gradient to background image on mobile/tablet screens so  the text and email input can be clearly seen or read */}
+      <div className="absolute top-0 right-0 left-0 bottom-0  xlMax:bg-[rgba(255,255,255,0.7)]"></div>
+
       <div className=" absolute top-0 ">
         <div className=" h-20   border border-blue-100 border-opacity-20  flex justify-between w-screen px-5 lg:px-20 xl:px-40 items-center">
           <Image
@@ -121,7 +124,7 @@ export default function HeroSection() {
                   setError('')
                 }}
                 disabled={isSubmitting}
-                className="mdMax:placeholder:text-sm placeholder:text-[#2F3C7E80] placeholder:font-medium bg-[#2F3C7E33]"
+                className="mdMax:placeholder:text-sm text-blue-100 mdMax:placeholder:text-[#2b397c98] placeholder:text-[#2F3C7E80] placeholder:font-medium bg-[#2F3C7E33]"
               />
               <p className="text-red-600 ml-4  mt-1 text-xs md:text-sm font-medium">
                 {error}
