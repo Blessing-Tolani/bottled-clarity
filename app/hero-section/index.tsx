@@ -40,7 +40,7 @@ export default function HeroSection() {
           message: `Error: ${result.message}`,
         })
       }
-    } catch (error: any) {
+    } catch {
       enqueueSnackbar({
         variant: 'error',
         message: 'Error: Failed to send',
@@ -108,7 +108,7 @@ export default function HeroSection() {
                 email={email}
                 setEmail={(value) => {
                   setEmail(value)
-                  error ? setError('') : ''
+                  setError('')
                 }}
                 disabled={isSubmitting}
                 className="mdMax:placeholder:text-sm placeholder:text-[#2F3C7E80] placeholder:font-medium bg-[#2F3C7E33]"

@@ -40,7 +40,7 @@ export default function Footer() {
           message: `Error: ${result.message}`,
         })
       }
-    } catch (_) {
+    } catch {
       enqueueSnackbar({
         variant: 'error',
         message: 'Error: Failed to send',
