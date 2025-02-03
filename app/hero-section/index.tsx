@@ -15,6 +15,7 @@ export default function HeroSection() {
   const [error, setError] = useState('')
 
   const handleJoinWaitlist = async () => {
+    // check if email address is valid
     const isEmailValidated = validateEmail(email)
     if (!isEmailValidated) {
       setError('Invalid Email')

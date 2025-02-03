@@ -15,6 +15,7 @@ export default function Footer() {
   const [error, setError] = useState('')
 
   const handleNewsletter = async () => {
+    //check if email is valid
     const isEmailValidated = validateEmail(email)
     if (!isEmailValidated) {
       setError('Invalid Email')
