@@ -2,20 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  src: url('/fonts/Roboto-VariableFont_wdth\,wght.ttf') format('opentype');
+  font-display: swap;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 500;
+  src: url('/fonts/Roboto-Medium.ttf') format('opentype');
+  font-display: swap;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@font-face {
+  font-family: 'Lora';
+  font-weight: 400;
+  src: url('/fonts/Lora-VariableFont_wght.ttf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-weight: 700;
+  src: url('/fonts/Lora-Bold.ttf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-weight: 500;
+  src: url('/fonts/Lora-Medium.ttf') format('opentype');
+  font-display: swap;
 }
